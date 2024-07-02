@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://boqi-chen.github.io/sitemap.xml
+Sitemap: https://20001lastorder.github.io//boqi-chen.github.io//sitemap.xml
