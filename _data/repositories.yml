@@ -1,14 +1,11 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - 20001LastOrder
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - Aggregate-Intellect/sherpa
+  - 20001LastOrder/Clevr-Relational
+  - langchain-ai/langchain
+  - Aggregate-Intellect/original-handson-packages
+  - 20001LastOrder/Taxonomy-GPT
