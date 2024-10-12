@@ -244,7 +244,7 @@ exclude:
   - vendor
   - "_pages/blog.md"
   - "_pages/projects.md"
-  # - "_pages/cv.md"
+  - "_pages/cv.md"
 keep_files:
   - CNAME
   - .nojekyll
