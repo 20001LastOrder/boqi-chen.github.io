@@ -7,6 +7,8 @@ nav: true
 nav_order: 6
 ---
 ### Reviewer
+* [Information and software technology](https://www.sciencedirect.com/journal/information-and-software-technology)
+    * 2024, 2025
 * [Software and Systems Modeling](https://link.springer.com/journal/10270)
     * 2024
 * [International Conference on Fundamental Approaches to Software Engineering (FASE)](https://www.etaps.org/2023/fase) (Subreviewer)
@@ -24,6 +26,6 @@ nav_order: 6
 
 ### Co-Supervisor
 * Engineering Capstone Project, McGill University
-    * 2024
+    * 2024-2025
 * 2 * Master's Thesis at McGill University
     * 2024

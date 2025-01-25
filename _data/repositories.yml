@@ -6,6 +6,6 @@ repo_description_lines_max: 2
 github_repos:
   - Aggregate-Intellect/sherpa
   - 20001LastOrder/Clevr-Relational
-  - langchain-ai/langchain
+  # - langchain-ai/langchain
   - Aggregate-Intellect/original-handson-packages
   - 20001LastOrder/Taxonomy-GPT
