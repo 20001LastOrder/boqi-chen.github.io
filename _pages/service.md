@@ -2,11 +2,17 @@
 layout: page
 permalink: /services/
 title: services
-description: Services I provided to the research community.
+description: Services I've provided to the research community.
 nav: true
 nav_order: 6
 ---
+### Organizing Committee Member
+* [15th Model-Driven Requirements Engineering Workshop (MoDRE 2025)](https://www.modre2025.ece.mcgill.ca/index.htm) at Requirements Engineering Conference (RE)
+    * 2025 (General Chair)
+
 ### Reviewer
+* [ACM Transactions on Software Engineering and Methodology](https://dl.acm.org/journal/tosem)
+    * 2025
 * [Information and software technology](https://www.sciencedirect.com/journal/information-and-software-technology)
     * 2024, 2025
 * [Software and Systems Modeling](https://link.springer.com/journal/10270)
@@ -15,6 +21,8 @@ nav_order: 6
     * 2023
 
 ### Program Committee Member
+* [First Large Language Models for Software Engineering Workshop](https://conf.researchr.org/home/staf-2025/llm4se-2025) at Software Technologies: Applications and Foundations (STAF)
+    * 2025
 * [Poster Track](https://conf.researchr.org/track/models-2024/models-2024-posters) at International Conference on Model Driven Engineering Languages and Systems (MODELS)
     * 2024
 * [First Large Language Models for Model-Driven Engineering Workshop](https://conf.researchr.org/home/staf-2024/llm4mde-2024?) at Software Technologies: Applications and Foundations (STAF)
