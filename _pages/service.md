@@ -11,16 +11,26 @@ nav_order: 6
     * 2025 (General Chair)
 
 ### Reviewer
+* [IEEE Transactions on Software Engineering](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=32)
+    * 2025 (1x)
+* [Information Processing and Management](https://www.sciencedirect.com/journal/information-processing-and-management)
+    * 2025 (2x)
+* [The Journal of Systems and Software](https://www.sciencedirect.com/journal/journal-of-systems-and-software)
+    * 2025 (1x)
+* [Expert Systems with Applications](https://www.sciencedirect.com/journal/expert-systems-with-applications)
+    * 2025 (3x)
 * [ACM Transactions on Software Engineering and Methodology](https://dl.acm.org/journal/tosem)
-    * 2025
-* [Information and software technology](https://www.sciencedirect.com/journal/information-and-software-technology)
-    * 2024, 2025
+    * 2025 (2x)
+* [Information and Software Technology](https://www.sciencedirect.com/journal/information-and-software-technology)
+    * 2024 (2x), 2025 (2x)
 * [Software and Systems Modeling](https://link.springer.com/journal/10270)
-    * 2024
+    * 2024 (4x)
 * [International Conference on Fundamental Approaches to Software Engineering (FASE)](https://www.etaps.org/2023/fase) (Subreviewer)
     * 2023
 
 ### Program Committee Member
+* [International Workshop on Multi-Agent Systems using Generative Artificial INtelligence for Automated Software Engineering (MAS-GAIN)](https://masgain.github.io/masgain2025/)
+    * 2025
 * [First Large Language Models for Software Engineering Workshop](https://conf.researchr.org/home/staf-2025/llm4se-2025) at Software Technologies: Applications and Foundations (STAF)
     * 2025
 * [Poster Track](https://conf.researchr.org/track/models-2024/models-2024-posters) at International Conference on Model Driven Engineering Languages and Systems (MODELS)
@@ -32,7 +42,9 @@ nav_order: 6
 * [International Conference on Model Driven Engineering Languages and Systems (MODELS)](https://conf.researchr.org/home/models-2022)
     * 2022
 
-### Co-Supervisor
+### Co-Supervisory
+* Undergraduate Research Project, McGill University
+    * 2024-2025
 * Engineering Capstone Project, McGill University
     * 2024-2025
 * 2 * Master's Thesis at McGill University

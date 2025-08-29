@@ -8,6 +8,7 @@ nav_order: 7
 ---
 
 ## Selected Awards:
+* Bronze Model at ICSE 2025 Student Research Competition - 2025
 * [FRQNT B2X Doctoral Scholarship](https://frq.gouv.qc.ca/en/program/scholarships-2nd-and-3rd-cycle-2022-2023/) - 2022 - 2025
 * [Mitacs Accelerate Grant](https://www.mitacs.ca/our-programs/accelerate-core-business/) - 2023-2025
 * [McGill Engineering Doctoral Award (MEDA)](https://www.mcgill.ca/engineering/students/graduate-students/funding/doctoral-faculty-awards) - 2021 - 2024
