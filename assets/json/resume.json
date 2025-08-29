@@ -7,7 +7,7 @@
     "phone": "(514) 430-9986",
     "url": "https://boqi-chen.xyz/",
     "summary": "I obtained the bachelor’s degree in software engineering (Dean's Honour List) with 4.00/4.00 Major GPA in 2020. Following my graduation, I directly started pursuing a PhD focusing on the reliable integration of ML components into safety-critical systems. I have contributed to diverse research projects, resulting in 13 papers published in top workshops, conferences and journals in my field. Moreover, I was a part time research associate at Huawei Canada and actively maintain a popular open-source project."
-  },  
+  },
   "education": [
     {
       "institution": "McGill University",
@@ -30,9 +30,7 @@
       "studyType": "Bachelor of Software Engineering",
       "startDate": "2016-09",
       "endDate": "2020-12",
-      "courses": [
-        "CGPA: 3.99/4.00 (Dean's Honour List)"
-      ]
+      "courses": ["CGPA: 3.99/4.00 (Dean's Honour List)"]
     }
   ],
   "work": [
@@ -115,17 +113,7 @@
     {
       "name": "Programming Languages",
       "icon": "fa-solid fa-file",
-      "keywords": [
-        "Python",
-        "Java",
-        "C#",
-        "JavaScript",
-        "MATLAB",
-        "C/C++",
-        "Ruby",
-        "OCaml",
-        "Julia"
-      ]
+      "keywords": ["Python", "Java", "C#", "JavaScript", "MATLAB", "C/C++", "Ruby", "OCaml", "Julia"]
     },
     {
       "name": "Packages",
@@ -218,7 +206,7 @@
     {
       "name": "Robustness of Models for Code",
       "highlights": [
-        "Researched the robustness of graph neural networks and large language models for program code", 
+        "Researched the robustness of graph neural networks and large language models for program code",
         "Applied sound certification methods for code-specific changes on the input data.",
         "Analyzed factors impacting the robustness with different properties on source code such as type and data flow. "
       ],
@@ -228,7 +216,7 @@
     {
       "name": "Constraint Optimization for Scene Graph Generation",
       "highlights": [
-        "Analyzed various fault patterns for machine learning models in object recognition, scene graph generation and visual question answering (VQA) and found that domain-specific constraints can be violated in existing models.", 
+        "Analyzed various fault patterns for machine learning models in object recognition, scene graph generation and visual question answering (VQA) and found that domain-specific constraints can be violated in existing models.",
         "Decouples the scene graph generation into multiple steps to avoid expensive training of large models.",
         "Proposed a post-processing method based on constraint optimization to ensure that domain-specific constraints in scene generation are always captured.. "
       ],
@@ -238,7 +226,7 @@
     {
       "name": "Incremental Graph Isomorphism Checking for Design Space Exploration",
       "highlights": [
-        "Participated in the research as a summer undergraduate research program.", 
+        "Participated in the research as a summer undergraduate research program.",
         "Proposed an incremental graph isomorphism checking algorithm that boosts checking performance and efficiency.",
         "Contributed to an open-source graph generator (VIATRA-Generator). "
       ],

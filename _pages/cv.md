@@ -5,7 +5,7 @@ title: cv
 nav: true
 nav_order: 5
 # cv_pdf: cv_academic.pdf
-# description: My shorter version of the CV. See the PDF file for the complete version. 
+# description: My shorter version of the CV. See the PDF file for the complete version.
 redirect: /assets/pdf/cv_academic.pdf
 # toc:
 #   sidebar: left
