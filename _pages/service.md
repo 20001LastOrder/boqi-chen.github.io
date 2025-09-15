@@ -21,9 +21,9 @@ nav_order: 6
 - [The Journal of Systems and Software](https://www.sciencedirect.com/journal/journal-of-systems-and-software)
   - 2025 (1x)
 - [Expert Systems with Applications](https://www.sciencedirect.com/journal/expert-systems-with-applications)
-  - 2025 (3x)
+  - 2025 (4x)
 - [ACM Transactions on Software Engineering and Methodology](https://dl.acm.org/journal/tosem)
-  - 2025 (2x)
+  - 2025 (3x)
 - [Information and Software Technology](https://www.sciencedirect.com/journal/information-and-software-technology)
   - 2024 (2x), 2025 (2x)
 - [Software and Systems Modeling](https://link.springer.com/journal/10270)
@@ -32,7 +32,10 @@ nav_order: 6
   - 2023
 
 ### Program Committee Member
-
+- [The 40th Annual AAAI Conference on Artificial Intelligence (AAAI)](https://aaai.org/conference/aaai/aaai-26/)
+  - 2026
+- [The 3rd ACM international conference on AI Foundation Models and Software Engineering (FORGE)](https://conf.researchr.org/track/forge-2026/forge-2026-papers)
+  - 2026
 - [International Workshop on Multi-Agent Systems using Generative Artificial INtelligence for Automated Software Engineering (MAS-GAIN)](https://masgain.github.io/masgain2025/)
   - 2025
 - [First Large Language Models for Software Engineering Workshop](https://conf.researchr.org/home/staf-2025/llm4se-2025) at Software Technologies: Applications and Foundations (STAF)
