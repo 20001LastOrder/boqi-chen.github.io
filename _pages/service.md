@@ -32,12 +32,12 @@ nav_order: 6
   - 2023
 
 ### Program Committee Member
-- [The 40th Annual AAAI Conference on Artificial Intelligence (AAAI)](https://aaai.org/conference/aaai/aaai-26/)
+<!-- - [The 40th Annual AAAI Conference on Artificial Intelligence (AAAI)](https://aaai.org/conference/aaai/aaai-26/) -->
+  <!-- - 2026 -->
+- [The 3rd ACM international conference on Foundation Models and Software Engineering (FORGE)](https://conf.researchr.org/track/forge-2026/forge-2026-papers)
   - 2026
-- [The 3rd ACM international conference on AI Foundation Models and Software Engineering (FORGE)](https://conf.researchr.org/track/forge-2026/forge-2026-papers)
-  - 2026
-- [International Workshop on Multi-Agent Systems using Generative Artificial INtelligence for Automated Software Engineering (MAS-GAIN)](https://masgain.github.io/masgain2025/)
-  - 2025
+<!-- - [International Workshop on Multi-Agent Systems using Generative Artificial INtelligence for Automated Software Engineering (MAS-GAIN)](https://masgain.github.io/masgain2025/) -->
+  <!-- - 2025 -->
 - [First Large Language Models for Software Engineering Workshop](https://conf.researchr.org/home/staf-2025/llm4se-2025) at Software Technologies: Applications and Foundations (STAF)
   - 2025
 - [Poster Track](https://conf.researchr.org/track/models-2024/models-2024-posters) at International Conference on Model Driven Engineering Languages and Systems (MODELS)
