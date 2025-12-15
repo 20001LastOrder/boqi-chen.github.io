@@ -24,10 +24,12 @@ ENV LANG=en_US.UTF-8 \
 
 RUN mkdir /srv/jekyll
 
-ADD Gemfile.lock /srv/jekyll
+# ADD Gemfile.lock /srv/jekyll
 ADD Gemfile /srv/jekyll
 
 WORKDIR /srv/jekyll
+
+# RUN bundle config build.nokogiri --use-system-libraries
 
 # install jekyll and dependencies
 RUN gem install jekyll bundler

@@ -10,7 +10,7 @@ nav_order: 5
 Since the start of my PhD, I've been a **teaching assistant** for multiple undergraduate and graduate level software engineering courses at McGill University. My work included teaching tutorials, preparing project materials and grading assignments.
 
 - ECSE 223 Model-Based Programming
-  - Winter 2021, Fall 2021, Winter 2022, Fall 2022, Winter 2023, Fall 2023, Winter 2024, Fall 2024
+  - Winter 2021, Fall 2021, Winter 2022, Fall 2022, Winter 2023, Fall 2023, Winter 2024, Fall 2024, Fall 2025
 - ECSE 439/539 Software Language Engineering
   - Winter 2023, Winter 2024
 - ECSE 326 Software Requirements Engineering

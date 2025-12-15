@@ -14,36 +14,39 @@ nav_order: 6
 
 ### Reviewer
 
+- [Empirical Software Engineering](https://link.springer.com/journal/10664)
 - [IEEE Transactions on Software Engineering](https://www.computer.org/csdl/journal/ts)
-  - 2025 (1x)
+  <!-- - 2025 (1x) -->
 - [Information Processing and Management](https://www.sciencedirect.com/journal/information-processing-and-management)
-  - 2025 (2x)
+  <!-- - 2025 (2x) -->
 - [The Journal of Systems and Software](https://www.sciencedirect.com/journal/journal-of-systems-and-software)
-  - 2025 (2x)
+  <!-- - 2025 (2x) -->
 - [Expert Systems with Applications](https://www.sciencedirect.com/journal/expert-systems-with-applications)
-  - 2025 (5x)
+  <!-- - 2025 (5x) -->
 - [ACM Transactions on Software Engineering and Methodology](https://dl.acm.org/journal/tosem)
-  - 2025 (3x)
+  <!-- - 2025 (3x) -->
 - [Information and Software Technology](https://www.sciencedirect.com/journal/information-and-software-technology)
-  - 2024 (2x), 2025 (2x)
+  <!-- - 2024 (2x), 2025 (2x) -->
 - [Software and Systems Modeling](https://link.springer.com/journal/10270)
-  - 2024 (4x)
-- [International Conference on Fundamental Approaches to Software Engineering (FASE)](https://www.etaps.org/2023/fase) (Subreviewer)
-  - 2023
+  <!-- - 2024 (4x) -->
+  <!-- - 2023 -->
 
 ### Program Committee Member
+##### **2026**
 - [The 40th Annual AAAI Conference on Artificial Intelligence (AAAI)](https://aaai.org/conference/aaai/aaai-26/)
-  - 2026
 - [The 3rd ACM international conference on Foundation Models and Software Engineering (FORGE)](https://conf.researchr.org/track/forge-2026/forge-2026-papers)
-  - 2026
-- [International Workshop on Multi-Agent Systems using Generative Artificial INtelligence for Automated Software Engineering (MAS-GAIN)](https://masgain.github.io/masgain2025/)
-  - 2025
+- [The 29th International Conference on Fundamental Approaches to Software Engineering (FASE)](https://www.etaps.org/2026/fase) (Subreviewer)
+
+##### **2025**
+- [First International Workshop on Multi-Agent Systems using Generative Artificial INtelligence for Automated Software Engineering (MAS-GAIN)](https://masgain.github.io/masgain2025/)
 - [First Large Language Models for Software Engineering Workshop](https://conf.researchr.org/home/staf-2025/llm4se-2025) at Software Technologies: Applications and Foundations (STAF)
-  - 2025
-- [Poster Track](https://conf.researchr.org/track/models-2024/models-2024-posters) at International Conference on Model Driven Engineering Languages and Systems (MODELS)
-  - 2024
+
+##### **2024**
+- [Poster Track](https://conf.researchr.org/track/models-2024/models-2024-posters) at 27th International Conference on Model Driven Engineering Languages and Systems (MODELS)
 - [First Large Language Models for Model-Driven Engineering Workshop](https://conf.researchr.org/home/staf-2024/llm4mde-2024?) at Software Technologies: Applications and Foundations (STAF)
-  - 2024
+
+##### **2023**
+- [The 26th International Conference on Fundamental Approaches to Software Engineering (FASE)](https://www.etaps.org/2023/fase) (Subreviewer)
 
 ### Student Volunteer
 
@@ -51,7 +54,8 @@ nav_order: 6
   - 2022
 
 ### Co-Supervisory
-
+- Master's Student Mentorship
+  - 2025-present
 - Undergraduate Research Project, McGill University
   - 2024-2025
 - Engineering Capstone Project, McGill University
