@@ -38,6 +38,32 @@ body.sticky-bottom-footer {
   }
 }
 
+// Highlighted nav button
+.nav-highlight-btn.nav-link,
+.navbar-nav .nav-item.active > .nav-highlight-btn.nav-link {
+  background-color: #8f1336 !important;
+  color: #fff !important;
+  border-radius: 20px;
+  padding-left: 0.85rem !important;
+  padding-right: 0.85rem !important;
+  margin-left: 0.5rem;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: #6d0f29 !important;
+    color: #fff !important;
+  }
+}
+
+html[data-theme="dark"] .nav-highlight-btn.nav-link,
+html[data-theme="dark"] .navbar-nav .nav-item.active > .nav-highlight-btn.nav-link {
+  background-color: #c0395a !important;
+
+  &:hover {
+    background-color: #8f1336 !important;
+  }
+}
+
 // TODO: redefine content layout.
 
 /******************************************************************************
