@@ -18,8 +18,6 @@ social: true # includes social icons at the bottom of the page
 >I am an Assistant Professor in [the School of Electrical Engineering and Computer Science (EECS)](https://www.uottawa.ca/faculty-engineering/school-electrical-engineering-computer-science/directory/boqi-chen) at the University of Ottawa. My research focuses on the **reliable and robust integration of AI component, including LLMs and multi-agent systems, into software engineering processes**, with an emphasis on model-based validation techniques and principled agentic workflow design. I am also broadly interested in evaluating the quality and properties of ML models for software engineering tasks such as code generation, bug detection, and code summarization.
 
 <div class="recruit-callout" style="
-  border: 2px solid #8F1336;
-  background-color: #fdf0f3;
   border-radius: 8px;
   padding: 1em 1.5em;
   margin: 1.5em 0;
@@ -52,12 +50,14 @@ I received my PhD in 2025 from the [Department of Electrical and Computer Engine
     --layer-model-heading: #5a1035;
   }
   .recruit-callout {
-    border-color: #8F1336;
+    border: 2px solid #8F1336;
     background-color: #fdf0f3;
+    color: #1a1a1a;
   }
   html[data-theme="dark"] .recruit-callout {
     background-color: #2a0a10;
     border-color: #c0395a;
+    color: #f5e6ea;
   }
   html[data-theme="dark"] {
     --layer-system-bg: #2e2510;
