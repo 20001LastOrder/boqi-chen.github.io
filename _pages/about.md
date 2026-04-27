@@ -9,7 +9,7 @@ profile:
   image: boqi_chen_1.png
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>email: boqi⚫chen@mail⚫mcgill⚫ca</p>
+    <p>email: boqi⚫chen@uottawa⚫ca</p>
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
@@ -27,7 +27,7 @@ social: true # includes social icons at the bottom of the page
 ">
   <p style="margin: 0; font-size: 1.1rem;">
     🎓 <strong>I am actively looking for motivated PhD and Master's students.</strong>
-    If you are passionate about reliable AI systems, agentic workflow design, or AI for software engineering, I'd love to hear from you!
+    If you are passionate about reliable AI systems, agentic workflow design, or AI for software engineering, I'd love to hear from you! See the <a href="/join/">Join the Journey</a> page for details.
   </p>
 </div>
 

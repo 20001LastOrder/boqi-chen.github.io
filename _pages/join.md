@@ -19,10 +19,10 @@ Thank you for considering joining my research group. I'm genuinely excited to bu
 
 ## A Lab Built on Mutual Commitment
 
-*What I offer flows outward; what I look for flows inward — node size reflects relative importance. Hover to highlight a node's connections, or click a node to read more below.*
+*What I offer flows outward; what I look for flows inward; node size reflects relative importance. Click a node to read more below.*
 
 <style>
-  .echarts { height: 580px !important; cursor: pointer; }
+  .echarts { height: 480px !important; cursor: pointer; }
 
   .node-detail-panel {
     --detail-color: #8e1336;
@@ -78,11 +78,11 @@ Thank you for considering joining my research group. I'm genuinely excited to bu
 ```echarts
 {
   "backgroundColor": "transparent",
-  "tooltip": { "show": true, "trigger": "item", "formatter": "{b}" },
+  "tooltip": { "show": false },
   "legend": [
     {
       "data": ["What I Offer", "What I Look For"],
-      "bottom": "2%",
+      "bottom": 4,
       "icon": "roundRect",
       "itemWidth": 16,
       "itemHeight": 10,
@@ -97,7 +97,7 @@ Thank you for considering joining my research group. I'm genuinely excited to bu
     "show": false, "type": "value", "min": 0, "max": 600, "inverse": true,
     "splitLine": { "show": false }
   },
-  "grid": { "left": 10, "right": 10, "top": 20, "bottom": 60, "containLabel": false },
+  "grid": { "left": 10, "right": 10, "top": 0, "bottom": 30, "containLabel": false },
   "animationDuration": 1400,
   "animationEasing": "cubicOut",
   "series": [
@@ -217,9 +217,9 @@ Thank you for considering joining my research group. I'm genuinely excited to bu
         { "id": "center", "name": "Research\nLab", "value": [500, 300], "symbolSize": 110, "category": 0, "label": { "fontSize": 14 } },
         { "id": "o1", "name": "Impactful\nResearch",    "value": [418, 157], "symbol": "roundRect", "symbolSize": [140, 50], "category": 1 },
         { "id": "o2", "name": "uOttawa\nEnvironment",   "value": [354, 223], "symbol": "roundRect", "symbolSize": [140, 50], "category": 1 },
-        { "id": "o3", "name": "RA Funding",             "value": [335, 300], "symbol": "roundRect", "symbolSize": [140, 50], "category": 1 },
-        { "id": "o4", "name": "Research\nMentorship",   "value": [354, 377], "symbol": "roundRect", "symbolSize": [140, 50], "category": 1 },
-        { "id": "o5", "name": "Ottawa\nQuality of Life","value": [418, 443], "symbol": "roundRect", "symbolSize": [140, 50], "category": 1 },
+        { "id": "o3", "name": "Funding",                "value": [335, 300], "symbol": "roundRect", "symbolSize": [140, 50], "category": 1 },
+        { "id": "o4", "name": "Mentorship",             "value": [354, 377], "symbol": "roundRect", "symbolSize": [140, 50], "category": 1 },
+        { "id": "o5", "name": "Collaboration",          "value": [418, 443], "symbol": "roundRect", "symbolSize": [140, 50], "category": 1 },
         { "id": "e1", "name": "Self-motivation\n& Curiosity", "value": [595, 165], "symbol": "roundRect", "symbolSize": [150, 65], "category": 2 },
         { "id": "e2", "name": "Passion\n& Tenacity",          "value": [659, 257], "symbol": "roundRect", "symbolSize": [125, 58], "category": 2 },
         { "id": "e3", "name": "Technical\nSkills",            "value": [659, 343], "symbol": "roundRect", "symbolSize": [110, 52], "category": 2 },
@@ -250,29 +250,25 @@ Thank you for considering joining my research group. I'm genuinely excited to bu
 <script>
   (function () {
     const NODE_CONTENT = {
-      "center": {
-        title: "About the Lab",
-        body: "<p><em>Placeholder.</em> A short overview of the lab's mission, the kinds of people I want to build it with, and how the diagram above maps the relationship between what I offer and what I expect. Replace this with your own framing.</p>"
-      },
       "o1": {
         title: "Impactful Research",
-        body: "<p><em>Placeholder.</em> Describe the kinds of problems you tackle and why they matter — e.g. AI reliability, model-based validation, agentic workflow design. Mention 1–2 ongoing directions and how new students can shape them.</p>"
+        body: "<p>We tackle cutting-edge problems at the frontier of AI and software engineering, with a focus on reliable LLM integration, agentic workflow design, and model-based validation. We publish at top SE and AI venues.</p>"
       },
       "o2": {
         title: "uOttawa Environment",
-        body: "<p><em>Placeholder.</em> Highlight the EECS school, faculty colleagues you collaborate with, computing facilities, and any industry/government partnerships students would benefit from.</p>"
+        body: "<p>The University of Ottawa is among Canada's top research universities, located in the heart of the nation's capital with strong ties to industry, government, and the broader Ottawa tech ecosystem. The EECS school is a collegial, active community with excellent facilities for AI and software engineering research. <a href='https://www.uottawa.ca/study/this-is-uottawa/why-choose-uottawa-international-students' target='_blank' rel='noopener'>Why choose uOttawa →</a></p>"
       },
       "o3": {
-        title: "RA Funding",
-        body: "<p><em>Placeholder.</em> Outline the funding model: research assistantships, typical stipend ranges, conference travel support, and how you help students apply for external scholarships (NSERC, OGS, Vanier).</p>"
+        title: "Funding",
+        body: "<p>I fund PhD and MSc students through research assistantships, and support strong candidates in applying for external scholarships such as NSERC, OGS, Vanier, and Mitacs. See the <a href='#funding'>Funding &amp; Scholarships</a> section below for the full list.</p>"
       },
       "o4": {
-        title: "Research Mentorship",
-        body: "<p><em>Placeholder.</em> Describe your mentorship style — meeting cadence, feedback loops, how you balance giving direction with letting students drive their own work, and your view on long-term career development.</p>"
+        title: "Mentorship",
+        body: "<p>I work closely with students on both research direction and the broader experience of graduate life, from paper writing to career planning. My goal is to grow your independence over time, so by the end of the program, you will be able to drive your own research agenda or career decisions.</p>"
       },
       "o5": {
-        title: "Ottawa Quality of Life",
-        body: "<p><em>Placeholder.</em> Cost of living vs. Toronto/Vancouver, neighborhoods near uOttawa, transit, food/culture, outdoor life on the Rideau Canal and Gatineau Park, bilingual environment.</p>"
+        title: "Collaboration",
+        body: "<p>We collaborate frequently with local and global experts across academia and industry.</p>"
       },
       "e1": {
         title: "Self-motivation & Curiosity",
@@ -284,7 +280,7 @@ Thank you for considering joining my research group. I'm genuinely excited to bu
       },
       "e3": {
         title: "Technical Skills",
-        body: "<ul><li>Programming or vibe coding (so long as you understand what's going on)</li><li>One of the following (both is a bonus):<ul><li>Strong grasp of fundamental AI ideas such as NLP, optimization, or LLMs</li><li>Deep understanding of fundamental SE concepts such as software design, modeling, implementation, and testing</li></ul></li></ul>"
+        body: "<ul><li>Programming or vibe coding (so long as you understand what's going on)</li><li>One of the following (both is a bonus):<ul><li>Strong grasp of fundamental AI ideas such as NLP, optimization, or LLMs</li><li>Deep understanding of fundamental SE concepts such as software design, modeling, implementation, and testing</li></ul></li><li>Prior research experience (publications, internships, projects) is a plus</li></ul>"
       },
       "e4": {
         title: "Collaboration",
@@ -335,7 +331,7 @@ Thank you for considering joining my research group. I'm genuinely excited to bu
 
 ## Graduate Students (PhD / MSc)
 
-I am actively recruiting for **Fall 2026 and beyond**. A PhD typically takes 4–5 years; an MSc takes about 2 years. I'm committed to working closely with you throughout.
+I am actively recruiting for motivated graduate students. A PhD typically takes 4–5 years; an MSc takes about 2 years. I'm committed to working closely with you throughout.
 
 **How to reach out:** Please send me an email with the subject line:
 
@@ -351,44 +347,70 @@ I am actively recruiting for **Fall 2026 and beyond**. A PhD typically takes 4�
 
 Please include:
 
-- A short note about your research interests and why they connect to my work — mentioning a specific paper of mine you found interesting goes a long way!
+- A short note about your research interests and why they connect to my work. Mentioning a specific topic you found interesting goes a long way!
 - Your CV and transcripts
 - Your intended program and start date
 
-I review emails every few weeks and genuinely try to respond when I see a strong fit. Due to volume, I may not always be able to reply — if you don't hear back within 3–4 weeks, it likely means I'm unable to offer a position at this time. I appreciate your understanding.
+I review emails every few weeks and genuinely try to respond when I see a strong fit. Due to volume, I may not always be able to reply. If you don't hear back within 3–4 weeks, it likely means I'm unable to offer a position at this time. I appreciate your understanding.
+
+> 📅 Make sure to check the [program-specific application deadlines](https://www.uottawa.ca/study/graduate-studies/program-specific-requirements) for your targeted start date.International students typically have earlier deadlines.
+{: .block-tip }
 
 ---
 
-## Funding & Scholarships
+<!-- ## Visiting & Internships
+
+I also welcome short-term visitors and interns who want to engage with our research for a few months. 
+
+### uOttawa undergraduate students
+
+If you're already at uOttawa, there are several ways to get involved:
+
+- **[NSERC Undergraduate Student Research Award (USRA)](https://www.nserc-crsng.gc.ca/students-etudiants/ug-pc/usra-brpc_eng.asp)** — paid 16-week summer research position for Canadian citizens and permanent residents. Apply through your faculty.
+- **Course-credit research** — honours projects, capstones (e.g., SEG/ELG 4910/4911), or directed studies (e.g., CSI 4900). A good way to try research before committing to a longer program.
+
+Email me with your CV, transcript, the route you're considering, and a short note about what excites you in the lab's research.
+
+### International undergraduate students
+
+- **[Mitacs Globalink Research Internship](https://www.mitacs.ca/our-programs/globalink-research-internship-students/)** — funded 12-week summer placements for international undergraduates from partner countries.
+
+### Graduate students from other institutions
+
+If you have your own funding (e.g., a CSC scholarship, support from your home institution, or sabbatical leave), please contact me directly with your CV, proposed dates, and funding source. -->
+
+<!-- --- -->
+
+## Funding & Scholarships {#funding}
 
 I typically fund PhD and MSc students through research assistantships. There are also a number of external awards worth pursuing, and I'm happy to support strong candidates in applying:
 
 **For domestic students (Canadian citizens & permanent residents):**
 - [NSERC Canada Graduate Research Scholarship – Master's (CGRS-M)](https://www.nserc-crsng.gc.ca/students-etudiants/pg-cs/cgsm-bescm_eng.asp)
-- [NSERC Canada Graduate Research Scholarship – Doctoral (CGRS-D)](https://www.nserc-crsng.gc.ca/students-etudiants/pg-cs/cgsd-bescd_eng.asp)
-- [Ontario Graduate Scholarship (OGS)](https://osap.gov.on.ca/OSAPPortal/en/A-ZListofAid/PRDR019245.html)
-- [Vanier Canada Graduate Scholarship](https://vanier.gc.ca/en/home-accueil.html) — doctoral students, highly prestigious
+- [Vanier Canada Graduate Scholarship](https://vanier.gc.ca/en/home-accueil.html)
 
 **For all students:**
-- [University of Ottawa Admission Scholarships](https://www.uottawa.ca/study/graduate-studies/financing-studies/scholarships-bursaries) — automatically considered upon admission
+- [NSERC Canada Graduate Research Scholarship – Doctoral (CGRS-D)](https://www.nserc-crsng.gc.ca/students-etudiants/pg-cs/cgsd-bescd_eng.asp)
+- [Ontario Graduate Scholarship (OGS)](https://osap.gov.on.ca/OSAPPortal/en/A-ZListofAid/PRDR019245.html)
+- [University of Ottawa Admission Scholarships](https://www.uottawa.ca/study/graduate-studies/funding-financing/awards/admission-scholarship) — automatically considered upon admission
 - [Mitacs Accelerate](https://www.mitacs.ca/our-programs/accelerate-core-business/) — industry-partnered research funding
 
-> If you're planning to apply for any of these, please reach out **well before the deadline** — I'll need time to prepare supporting documents.
+> 💰 For a complete list of funding and scholarship opportunities available at uOttawa, see the [Awards and Financial Support](https://www.uottawa.ca/study/graduate-studies/awards-financial-support) page.
 {: .block-tip }
 
 ---
 
 ## International Students
 
-I warmly welcome students from around the world, and I hope you'll seriously consider Ottawa as your next home. A few practical things to keep in mind:
+As a former international student, I warmly welcome students from around the world, and I hope you'll seriously consider Ottawa as your next stop. A few practical things to keep in mind:
 
 - **Start early.** Application deadlines for international students are typically earlier than for domestic students, to allow time for visa and study permit processing. Planning 8–12 months ahead is strongly recommended.
-- **English proficiency.** If English is not your first language and you haven't completed a degree at an English-language institution, you'll need to submit TOEFL or IELTS scores that meet the University of Ottawa's requirements.
-- **Funding opportunities.** International students are eligible for the CGRS-D (up to 15% of awards are available to international applicants), the Ontario Graduate Scholarship, and uOttawa institutional awards including the Differential Tuition Fee Exemption.
-- **CSC funding.** If you are from China and hold CSC (China Scholarship Council) support, please mention this in your initial email.
+- **English proficiency.** If English is not your first language and you haven't completed a degree at an English-language institution, you'll need to submit TOEFL or IELTS scores that meet the University of Ottawa's requirements. Please check the language requirement from [uOttawa website](https://www.uottawa.ca/study/graduate-studies/program-specific-requirements).
+- **Funding opportunities.** International students are eligible for the NSERC Doctoral scholar ship, the Ontario Graduate Scholarship, and uOttawa institutional awards including the [Differential Tuition Fee Exemption](https://www.uottawa.ca/study/fees-financial-support/differential-tuition-fee-exemption-scholarship).
+- **External funding.** If you are receiving any external funding support, please mention this in your initial email.
 
 ---
 
-## Get Involved Early: Graph Discussion Group
+<!-- ## Get Involved Early: Graph Discussion Group
 
-Not ready to apply yet, but curious about our research? You're welcome to join our [Graph Discussion Group](https://lu.ma/gnn-discussion-group) — a bi-weekly seminar on graph neural networks and their applications, open to anyone interested. It's a low-pressure way to engage with the community, hear about ongoing work, and meet potential collaborators. Feel free to reach out if you'd like to be added to the mailing list or present your own work.
+Not ready to apply yet, but curious about our research? You're welcome to join our [Graph Discussion Group](https://lu.ma/gnn-discussion-group) — a bi-weekly seminar on graph neural networks and their applications, open to anyone interested. It's a low-pressure way to engage with the community, hear about ongoing work, and meet potential collaborators. Feel free to reach out if you'd like to be added to the mailing list or present your own work. -->
