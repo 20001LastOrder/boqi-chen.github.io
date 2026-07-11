@@ -101,7 +101,7 @@ I received my PhD in 2025 from the [Department of Electrical and Computer Engine
                    padding: 1em 1.5em; border-radius: 0 8px 8px 0;">
         <h4 style="color: var(--layer-comp-ai-heading);">AI Component Layer</h4>
         <p>
-        How to provide reliability and robustness guarantees by design for AI components, including prompting, agentic architecture, and decoding strategies.
+        How to provide reliability and robustness guarantees by design for AI components, including prompting, agentic architecture, and decoding strategies (<a href="https://arxiv.org/pdf/2605.30054">FSE'26 IVR</a>).
         </p>
       </div>
 

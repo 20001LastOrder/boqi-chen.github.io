@@ -19,10 +19,13 @@ Thank you for considering joining my research group. I'm genuinely excited to bu
 
 ## A Lab Built on Mutual Commitment
 
-*What I offer flows outward; what I look for flows inward; node size reflects relative importance. Click a node to read more below.*
+*What I offer flows outward; what I look for flows inward; node size reflects relative importance. Tap or click a node to read more below.*
 
 <style>
   .echarts { height: 480px !important; cursor: pointer; }
+  @media (max-width: 800px) {
+    .echarts { height: 560px !important; }
+  }
 
   .node-detail-panel {
     --detail-color: #8e1336;
@@ -288,14 +291,85 @@ Thank you for considering joining my research group. I'm genuinely excited to bu
       }
     };
 
-    function attachNodeClickHandler(retries = 40) {
+    function centerNode(pos, size, fontSize) {
+      return { id: "center", name: "Research\nLab", value: pos, symbolSize: size, category: 0, label: { fontSize: fontSize } };
+    }
+
+    function box(id, name, pos, size, category) {
+      return { id: id, name: name, value: pos, symbol: "roundRect", symbolSize: size, category: category };
+    }
+
+    function layoutOption(center, offers, expects, axisMax, nodes) {
+      return {
+        xAxis: { min: 0, max: axisMax[0] },
+        yAxis: { min: 0, max: axisMax[1] },
+        series: [
+          { data: offers.map(p => ({ coords: [center, p] })) },
+          { data: expects.map(p => ({ coords: [p, center] })) },
+          { data: nodes }
+        ]
+      };
+    }
+
+    // Radial layout for wide screens (same coordinates as the base option).
+    function desktopOption() {
+      const C = [500, 300];
+      const O = [[418, 157], [354, 223], [335, 300], [354, 377], [418, 443]];
+      const E = [[595, 165], [659, 257], [659, 343], [595, 435]];
+      const nodes = [
+        centerNode(C, 110, 14),
+        box("o1", "Impactful\nResearch",  O[0], [140, 50], 1),
+        box("o2", "uOttawa\nEnvironment", O[1], [140, 50], 1),
+        box("o3", "Funding",              O[2], [140, 50], 1),
+        box("o4", "Mentorship",           O[3], [140, 50], 1),
+        box("o5", "Collaboration",        O[4], [140, 50], 1),
+        box("e1", "Self-motivation\n& Curiosity", E[0], [150, 65], 2),
+        box("e2", "Passion\n& Tenacity",          E[1], [125, 58], 2),
+        box("e3", "Technical\nSkills",            E[2], [110, 52], 2),
+        box("e4", "Collaboration",                E[3], [100, 46], 2)
+      ];
+      return layoutOption(C, O, E, [1000, 600], nodes);
+    }
+
+    // Vertical two-column layout for narrow screens: offers on top,
+    // lab in the middle, expectations below. Axis max equals the plot
+    // size in pixels so 1 data unit = 1 px and box sizes stay honest.
+    function mobileOption(plotW) {
+      const mid = Math.round(plotW / 2);
+      const cL = Math.round(plotW * 0.26);
+      const cR = Math.round(plotW * 0.74);
+      const bw = Math.min(150, Math.round(plotW * 0.44));
+      const C = [mid, 272];
+      const O = [[cL, 32], [cR, 32], [cL, 96], [cR, 96], [mid, 160]];
+      const E = [[cL, 392], [cR, 392], [cL, 464], [cR, 464]];
+      const nodes = [
+        centerNode(C, 96, 13),
+        box("o1", "Impactful\nResearch",  O[0], [bw, 46], 1),
+        box("o2", "uOttawa\nEnvironment", O[1], [bw, 46], 1),
+        box("o3", "Funding",              O[2], [bw, 46], 1),
+        box("o4", "Mentorship",           O[3], [bw, 46], 1),
+        box("o5", "Collaboration",        O[4], [bw, 46], 1),
+        box("e1", "Self-motivation\n& Curiosity", E[0], [bw, 58], 2),
+        box("e2", "Passion\n& Tenacity",          E[1], [bw - 10, 52], 2),
+        box("e3", "Technical\nSkills",            E[2], [bw - 20, 48], 2),
+        box("e4", "Collaboration",                E[3], [bw - 30, 42], 2)
+      ];
+      return layoutOption(C, O, E, [plotW, 530], nodes);
+    }
+
+    const mobileQuery = window.matchMedia('(max-width: 800px)');
+    let applyLayout = null;
+    let closeBound = false;
+
+    function setupChart(retries = 40) {
       const chartDiv = document.querySelector('.echarts');
       const chart = chartDiv && window.echarts && echarts.getInstanceByDom(chartDiv);
       if (!chart) {
-        if (retries > 0) setTimeout(() => attachNodeClickHandler(retries - 1), 100);
+        if (retries > 0) setTimeout(() => setupChart(retries - 1), 100);
         return;
       }
 
+      chart.off('click');
       chart.on('click', { dataType: 'node' }, function (params) {
         const content = NODE_CONTENT[params.data.id];
         if (!content) return;
@@ -316,13 +390,34 @@ Thank you for considering joining my research group. I'm genuinely excited to bu
         panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
       });
 
-      document.querySelector('.node-detail-close').addEventListener('click', function () {
-        document.getElementById('node-detail-panel').classList.remove('visible');
-      });
+      if (!closeBound) {
+        closeBound = true;
+        document.querySelector('.node-detail-close').addEventListener('click', function () {
+          document.getElementById('node-detail-panel').classList.remove('visible');
+        });
+      }
+
+      applyLayout = function () {
+        chart.resize();
+        const plotW = chartDiv.clientWidth - 20; // minus grid left + right padding
+        chart.setOption(mobileQuery.matches ? mobileOption(plotW) : desktopOption());
+      };
+      applyLayout();
     }
 
+    let resizeTimer;
+    window.addEventListener('resize', function () {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(function () { if (applyLayout) applyLayout(); }, 150);
+    });
+
+    // The theme toggle re-creates the chart, wiping our handlers and layout.
+    new MutationObserver(function () {
+      setTimeout(function () { setupChart(); }, 300);
+    }).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+
     document.addEventListener('readystatechange', function () {
-      if (document.readyState === 'complete') attachNodeClickHandler();
+      if (document.readyState === 'complete') setupChart();
     });
   })();
 </script>
