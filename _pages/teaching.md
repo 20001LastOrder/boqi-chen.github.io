@@ -2,10 +2,17 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: Courses I've taught.
+description: Courses I'm teaching and have taught.
 nav: true
 nav_order: 5
 ---
+
+I am currently an **instructor** for the following courses at the University of Ottawa:
+
+- SEG 3102 Software Design and Architecture
+  - Fall 2026
+- SEG 3110 Advanced Software Design and Reengineering
+  - Winter 2027
 
 During my PhD, I was a **teaching assistant** for multiple undergraduate and graduate level software engineering courses at McGill University. My work included teaching tutorials, preparing project materials and grading assignments.
 
