@@ -15,6 +15,9 @@ chart:
 
 Thank you for considering joining my research group. I'm genuinely excited to build a lab with curious, motivated people, and I'd love to hear from you if our research interests align.
 
+> 🧑‍💻 **uOttawa undergraduate students:** if you are interested in research or doing a project course with me, see the [undergraduate projects](/ug-projects/) page.
+{: .block-tip }
+
 ---
 
 ## A Lab Built on Mutual Commitment

@@ -27,6 +27,9 @@ social: true # includes social icons at the bottom of the page
     🎓 <strong>I am actively looking for motivated PhD and Master's students.</strong>
     If you are passionate about reliable AI systems, agentic workflow design, or AI for software engineering, I'd love to hear from you! See the <a href="/join/">Join the Journey</a> page for details.
   </p>
+  <p style="margin: 0.7em 0 0 0; font-size: 1.1rem;">
+    🧑‍💻 <strong>uOttawa undergraduate students:</strong> if you are interested in research or doing a project course with me, see the <a href="/ug-projects/">undergraduate projects</a> page.
+  </p>
 </div>
 
 I received my PhD in 2025 from the [Department of Electrical and Computer Engineering](https://www.mcgill.ca/ece/) at McGill University, supervised by [Prof. Gunter Mussbacher](https://www.ece.mcgill.ca/~gmussb1/) and [Prof.Daniel Varro](https://liu.se/en/employee/danva91). During my PhD, I worked as an R&D engineer at [Aggregate Intellect](https://www.ai.science/) through a Mitacs grant and as a part-time research associate at _Huawei Waterloo Research Center_. I was also an active contributor to the open-source project [Sherpa](https://github.com/Aggregate-Intellect/sherpa), a large language model framework for robust agentic applications.

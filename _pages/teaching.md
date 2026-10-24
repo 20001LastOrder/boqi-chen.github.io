@@ -14,6 +14,8 @@ I am currently an **instructor** for the following courses at the University of 
 - SEG 4110/CSI 5137 Advanced Software Design and Reengineering
   - Winter 2027
 
+I also supervise **undergraduate project courses** (SEG 3904 and CSI 4900). See [undergraduate projects](/ug-projects/) for open projects and how to apply.
+
 During my PhD, I was a **teaching assistant** for multiple undergraduate and graduate level software engineering courses at McGill University. My work included teaching tutorials, preparing project materials and grading assignments.
 
 - ECSE 223 Model-Based Programming

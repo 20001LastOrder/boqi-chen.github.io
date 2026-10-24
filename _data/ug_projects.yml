@@ -1,0 +1,72 @@
+# Undergraduate project listings rendered on /ug-projects/.
+#
+# active:  short-term projects currently looking for students
+# ongoing: long-term directions that are always open to contributions
+# past:    completed projects (the section is hidden while this list is empty)
+#
+# Set `status: filled` on an active project to grey it out.
+# Text fields support Markdown.
+
+active:
+  - title: AI Agents for Research Artifact Evaluation
+    summary: >
+      Conferences ask authors to share artifacts (code, data, scripts) with their papers,
+      and reviewers check whether those artifacts work and support the paper's claims.
+      Build an AI agent that does this: set up and run an artifact, check whether it
+      matches what the paper reports, and assess how hard it is to execute.
+    tasks:
+      - Design an agent workflow that installs and runs artifacts from published papers
+      - Compare the produced results against the claims in the paper
+      - Evaluate the agent on a set of real artifacts from software engineering venues
+
+  - title: Python Bindings for Refinery
+    link: https://refinery.tools/
+    summary: >
+      Refinery is a JVM-based graph solver for generating well-formed models. Make it
+      usable from Python, so it can be combined with the Python ML and LLM ecosystem.
+    tasks:
+      - Design a Pythonic API on top of the core Refinery functionality
+      - Implement the bindings and package them for installation with pip
+      - Write tests, documentation, and example notebooks
+
+  - title: Visualizing Constrained LLM Generation
+    summary: >
+      When an LLM generates a model under constraints, every token it produces changes the
+      model being built. Build an interactive view that shows the model as it is created,
+      the tokens the LLM generated, and how each token affects the model.
+    tasks:
+      - Build an interactive web view of the generation process, step by step
+      - Connect it to our constrained generation pipeline
+      - Use it to explore and explain where and why generation goes wrong
+
+  - title: An MCP Server for Guided Software Design
+    summary: >
+      Coding agents tend to jump straight to code. Build a
+      [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) server that guides
+      an agent through a specific software design process, from requirements to design
+      decisions to implementation. Preferred if you have taken SEG 3102 (Software Design
+      and Architecture).
+    tasks:
+      - Encode the steps and artifacts of a software design process as MCP tools and prompts
+      - Implement the server and connect it to an existing coding agent
+      - Compare designs produced with and without the guidance
+
+ongoing:
+  - title: Sherpa
+    link: https://github.com/Aggregate-Intellect/sherpa
+    summary: >
+      An open-source framework for building reliable LLM agents with state machines,
+      developed in collaboration with [Aggregate Intellect](https://www.ai.science/).
+      We are actively looking for **maintainers** to develop and maintain new features.
+
+  - title: Constrained LLM Generation
+    summary: >
+      Making LLMs produce output that always follows a grammar or a set of constraints.
+      Open topics include new applications and how to configure constraints for them.
+
+  - title: Interactive Software Design with LLMs
+    summary: >
+      Tools and workflows where developers and LLMs design software together, keeping the
+      human in control of key design decisions.
+
+past: []
